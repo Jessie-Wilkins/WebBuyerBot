@@ -13,5 +13,8 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
 && cp chromedriver /usr/bin/
 
 COPY ./WebTest.py WebTest.py
+COPY ./WebBuyerTest.py WebBuyerTest.py
+
+RUN python3 WebBuyerTest.py
 
 CMD [ "python3", "WebTest.py" ]
