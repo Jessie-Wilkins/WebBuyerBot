@@ -1,5 +1,5 @@
 import unittest
-import WebBuyer
+from WebBuyer import WebBuyer
 
 class WebBuyerTest(unittest.TestCase):
 
